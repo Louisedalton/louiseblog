@@ -13,9 +13,9 @@
 		$password_2 = esc($_POST['password_2']);
 
 		// form validation: ensure that the form is correctly filled
-		if (empty($username)) {  array_push($errors, "Uhmm...We gonna need your username"); }
-		if (empty($email)) { array_push($errors, "Oops.. Email is missing"); }
-		if (empty($password_1)) { array_push($errors, "uh-oh you forgot the password"); }
+		if (empty($username)) {  array_push($errors, "UYou need a username!"); }
+		if (empty($email)) { array_push($errors, "Please add your email!"); }
+		if (empty($password_1)) { array_push($errors, "You need a password!"); }
 		if ($password_1 != $password_2) { array_push($errors, "The two passwords do not match");}
 
 		// Ensure that no user is registered twice. 
@@ -90,7 +90,7 @@
 				} else {
 					$_SESSION['message'] = "You are now logged in";
 					// redirect to public area
-					header('location: /index.php');				
+					header('location: index.php');				
 					exit(0);
 				}
 			} else {

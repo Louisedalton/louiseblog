@@ -7,12 +7,10 @@
 <?php }else{ ?>
 	<div class="banner">
 		<div class="welcome_msg">
-			<h1>Today's Inspiration</h1>
-			<p> 
-			    One day your life <br> 
-			    will flash before your eyes. <br> 
-			    Make sure it's worth watching. <br>
-				<span>~ Gerard Way</span>
+			<h1>Better Than the Movie Since 2020</h1>
+			<p> <br>
+			
+				<span>for people who write in the margins</span>
 			</p>
 			
 		</div>
@@ -20,7 +18,7 @@
 		<div class="login_div">
 			<form action="<?php echo BASE_URL . 'index.php'; ?>" method="post" >
 				<h2>Register / Log In</h2>
-				<div style="width: 60%; margin: 0px auto; text-align:center;">
+				<div style="width: 60%; margin: 0px auto; text-align:right;">
 					<?php include(ROOT_PATH . '/includes/errors.php') ?>
 				</div>
 			<a href="register.php" class="button">Join us!</a>

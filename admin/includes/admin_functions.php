@@ -30,7 +30,6 @@ if (isset($_GET['delete-admin'])) {
 	$admin_id = $_GET['delete-admin'];
 	deleteAdmin($admin_id);
 }
-
 /* - - - - - - - - - - - -
 -  Admin users functions
 - - - - - - - - - - - - -*/
@@ -141,6 +140,7 @@ function deleteAdmin($admin_id) {
 		exit(0);
 	}
 }
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
 * - Returns all admin users and their corresponding roles
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -170,10 +170,10 @@ function makeSlug(String $string){
 	$slug = preg_replace('/[^A-Za-z0-9-]+/', '-', $string);
 	return $slug;
 }
-
-
+?>
+<?php 
 // Admin user variables
-// ... varaibles here ...
+
 
 // Topics variables
 $topic_id = 0;
@@ -292,4 +292,3 @@ function deleteTopic($topic_id) {
 		exit(0);
 	}
 }
-?>
